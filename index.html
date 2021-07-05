@@ -72,7 +72,6 @@
             </div>
         </nav>
     </header>
-
     <main>
         <div id="container">
             <div onmouseover="change()">
@@ -203,15 +202,12 @@
     <script>
         function change() {
             var clr = document.querySelector(".clr")
-            var R = new Array("0", "1", "2");
-            var G = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
-            var B = new Array("0", "1", "2", "3", "4", "5");
-            // console.log("rgb(" + R[Math.floor(Math.random() * R.length)] + G[Math.floor(Math.random() * G.length)] + B[Math.floor(Math.random() * B.length)] + "," + R[Math.floor(Math.random() * R.length)] + G[Math.floor(Math.random() * G.length)] + B[Math.floor(Math.random() * B.length)] + "," + R[Math.floor(Math.random() * R.length)] + G[Math.floor(Math.random() * G.length)] + B[Math.floor(Math.random() * B.length)] + ")");
-            var bg = new Array("rgb(" + R[Math.floor(Math.random() * R.length)] + G[Math.floor(Math.random() * G.length)] + B[Math.floor(Math.random() * B.length)] + "," + R[Math.floor(Math.random() * R.length)] + G[Math.floor(Math.random() * G.length)] + B[Math.floor(Math.random() * B.length)] + "," + R[Math.floor(Math.random() * R.length)] + G[Math.floor(Math.random() * G.length)] + B[Math.floor(Math.random() * B.length)] + ")");
-            document.body.style.background = bg
-            clr.textContent = document.body.style.background = bg
+            var bgcolor = new Array("#001834", "blue", "cyan", "red");
+            document.body.style.background = bgcolor[Math.floor(Math.random() * bgcolor.length)]
+            clr.textContent = document.body.style.background = bgcolor[Math.floor(Math.random() * bgcolor.length)]
         }
     </script>
+
 </body>
 
 </html>
