@@ -5,100 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
+    <title>Bg Color</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    body {
-        background-color: darkgray;
-        margin: 0;
-        padding: 0;
-    }
-
-    div {
-        color: transparent;
-    }
-
-    #logo {
-        background-image: linear-gradient(108deg,
-                rgba(134, 227, 227, 1) 0%, rgba(102, 221, 41, 1) 50%, rgba(252, 164, 69, 1) 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    #logo a:hover {
-        background-image: linear-gradient(108deg,
-                rgba(63, 94, 251, 1) 0%,
-                rgba(252, 70, 107, 1) 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    #heading {
-        font-size: 30px;
-        border-radius: 10px;
-        padding: 8px 0px 8px 0px;
-    }
-
-    #head {
-        font-size: 30px;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        background-color: black;
-        padding: 8px 8px 8px 8px;
-        font-weight: bold;
-    }
-
-    nav {
-        background-color: rgb(44, 39, 39);
-        padding: 0.5%;
-        padding-left: 8%;
-        padding-right: 6%;
-        font-size: 30px;
-        color: white;
-        display: flex;
-        height: 50px;
-        justify-content: space-between;
-        width: 86%;
-        position: fixed;
-        align-items: center;
-    }
-
-    #header-items a:hover {
-        background-image: linear-gradient(108deg,
-                rgba(252, 70, 107, 1) 0%,
-                rgba(63, 94, 251, 1) 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    #header-items {
-        display: flex;
-        width: 25%;
-        font-size: 0.75em;
-        justify-content: space-evenly;
-        align-items: center;
-        background-image: linear-gradient(108deg,
-                rgba(252, 164, 69, 1) 0%, rgba(102, 221, 41, 1) 50%, rgba(134, 227, 227, 1) 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
-</style>
 
 <body>
     <header>
         <nav>
-            <span id="logo"> <a href="#">Color Change</a> </span>
+            <span id="logo"> <a href="index.html">Color Change</a> </span>
             <div id="header-items">
                 <span><a href="index.html">Home</a></span>
                 <span><a href="hexadecimal.html">Hexadecimal</a></span>
@@ -164,16 +78,9 @@
             </div>
             <div onmouseover="change()">
                 .........................................................................................................................................<span
-                    id="heading"><span id="head">Background Color is:</span><span class="clr" style="background-color: black;
-                    padding: 8px 8px 8px 8px;
-                    color: white;
-                    font-weight: bold;
-                    border-bottom-right-radius: 10px;
-                    border-top-right-radius: 10px;
-                    mix-blend-mode: multiply;">darkgray</span></span>
+                    id="heading"><span id="head">Background Color is:</span><span class="clr">darkgray</span></span>
                 .........................................................................................................................................
             </div>
-
             <div onmouseover="change()">
                 .......................................................................................................................................................................................................................................................................................................................................................................................
             </div>
@@ -216,7 +123,6 @@
             <div onmouseover="change()">
                 .......................................................................................................................................................................................................................................................................................................................................................................................
             </div>
-
             <div onmouseover="change()">
                 .......................................................................................................................................................................................................................................................................................................................................................................................
             </div>
@@ -234,17 +140,7 @@
             </div>
         </div>
     </main>
-
-    <script>
-        function change() {
-            var clr = document.querySelector(".clr")
-            var bgcolor = new Array("blueviolet", "blue", "cyan", "red", "blanchedalmond", "burlywood", "cadetblue", "cornflowerblue", "darkgoldenrod", "darkorchid", "darkmagenta", "darkviolet", "violet", "yellowgreen", "gray",
-                "indigo", "indianred", "lavender", "chartreuse", "brown");
-            document.body.style.background = bgcolor[Math.floor(Math.random() * bgcolor.length)]
-            clr.textContent = document.body.style.background = bgcolor[Math.floor(Math.random() * bgcolor.length)]
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
